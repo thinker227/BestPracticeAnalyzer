@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis.Text;
 namespace Analyzer;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public sealed class Analyzer : DiagnosticAnalyzer {
+public sealed class BestPracticeAnalyzer : DiagnosticAnalyzer {
 
 	public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
 		ImmutableArray.Create(Descriptor);
